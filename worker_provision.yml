@@ -1,0 +1,8 @@
+##
+# This playbook deploys the whole worker stack
+##
+- name: apply common configuration to worker servers
+  hosts: worker
+  become: true
+  roles:
+    - worker

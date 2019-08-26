@@ -1,0 +1,8 @@
+##
+# This playbook deploys the whole app stack
+##
+- name: apply common configuration to app servers
+  hosts: app
+  become: true
+  roles:
+    - app
